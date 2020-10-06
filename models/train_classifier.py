@@ -67,21 +67,19 @@ def build_model():
     Output:
         输出分类结果，分类结果属于该数据集中的 36 个类
     """
-    model = Pipeline([
+    pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
         ('clf', MultiOutputClassifier(AdaBoostClassifier()))
     ])
     
-    """
     parameters = {'vect__max_df': (0.75, 1.0),
             'vect__max_features': (None, 5000),
             'tfidf__use_idf': (True, False)
              }
 
     model = GridSearchCV(pipeline, param_grid=parameters,cv=5, verbose=4, n_jobs=-1)
-    """
-    
+   
     return model
     
 

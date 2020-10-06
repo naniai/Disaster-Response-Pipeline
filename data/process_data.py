@@ -47,9 +47,9 @@ def clean_data(df):
     df = pd.concat([df, categories], axis=1)
     
     #删除重复行
-    df.duplicated().sum()
+    print("Before:", df.duplicated().sum())
     df.drop_duplicates(inplace=True)
-    df.duplicated().sum()
+    print("After:", df.duplicated().sum())
     return df
 
 

@@ -1,15 +1,25 @@
 # Disaster Response Pipeline Project
 
 ### 描述:
-该项目是Udacity与Figure Eight合作开发的数据科学纳米学位的项目。初始数据集包含预先标记的推文和灾难应对机构收到来自受害人群的求助信息。该项目的目的是构建一种对消息进行分类的自然语言处理工具。
+该项目是Udacity与Figure Eight合作开发的数据科学纳米学位的项目。初始数据集包含预先标记的推文和灾难应对机构收到来自受害人群的求助信息。
+该项目的目的是构建一种对消息进行分类的自然语言处理工具。
 
 该项目分为以下几节：
 
-1. 数据处理，ETL管道可从源中提取数据，清除数据并将其保存在适当的数据库结构中
+1. 数据处理，ETL管道可从源中提取数据， 清洗数据并将其保存在适当的数据库结构中
 
 2. 机器学习管道可训练能够对文本进行分类的模型
 
 3. Web App实时显示模型结果。
+
+### 技术
+项目的创建中使用的技术
+
+* Python 3.5+ 
+* Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
+* Natural Language Process Libraries: NLTK
+* SQLlite Database Libraqries: SQLalchemy
+* Web App and Data Visualization: Flask, Plotly
 
 ### 执行程序：
 1. Run the following commands in the project's root directory to set up your database and model.
